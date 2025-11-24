@@ -1,4 +1,4 @@
-import { LucideIcon } from 'lucide-react';
+import { LucideIcon } from "lucide-react";
 
 export interface Brand {
   id: string;
@@ -7,4 +7,5 @@ export interface Brand {
   url: string;
   icon: LucideIcon;
   gradient: string; // Subtle hover gradient
+  imgLoja: string;
 }

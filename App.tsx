@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Tractor, Car, Fish, Gift, Copy, Check } from "lucide-react";
+import {
+  Tractor,
+  Car,
+  Fish,
+  Gift,
+  Copy,
+  Check,
+  Filter,
+  Plane,
+} from "lucide-react";
 import { Brand } from "./types";
 import BrandCard from "./components/BrandCard";
 
@@ -33,14 +42,16 @@ const App: React.FC = () => {
       url: "https://www.brkagro.com.br",
       icon: Tractor,
       gradient: "from-green-500 to-emerald-900",
+      imgLoja: "./assets/logo-agro.png",
     },
     {
       id: "motors",
       name: "BRK Motors",
       description: "Roupas e equipamentos para quem vive a estrada.",
       url: "https://www.brkmotors.com.br",
-      icon: Car,
+      icon: Plane,
       gradient: "from-red-500 to-red-900",
+      imgLoja: "./assets/logo-motors.png",
     },
     {
       id: "fishing",
@@ -49,6 +60,7 @@ const App: React.FC = () => {
       url: "https://www.brkfishing.com.br",
       icon: Fish,
       gradient: "from-blue-500 to-cyan-900",
+      imgLoja: "./assets/logo-fishing.png",
     },
   ];
 
@@ -60,9 +72,7 @@ const App: React.FC = () => {
 
       {/* Header */}
       <header className="w-full py-6 md:py-8 flex justify-center items-center relative z-10">
-        <h1 className="text-xl md:text-3xl font-bold tracking-widest text-white uppercase">
-          BRK
-        </h1>
+        <img className="invert w-60" src="./assets/logo-simples.svg" alt="" />
       </header>
 
       {/* Main Content */}
