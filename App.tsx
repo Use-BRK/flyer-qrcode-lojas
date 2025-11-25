@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import {
-  Tractor,
-  Car,
-  Fish,
-  Gift,
-  Copy,
-  Check,
-  Filter,
-  Plane,
-} from "lucide-react";
+import { Tractor, Fish, Gift, Copy, Check, Plane } from "lucide-react";
 import { Brand } from "./types";
 import BrandCard from "./components/BrandCard";
+import logoAgro from "./assets/logo-agro.png";
+import logoFishing from "./assets/logo-fishing.png";
+import logoMotors from "./assets/logo-motors.png";
+import logoBRK from "./assets/logo-simples.svg";
 
 const App: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -42,7 +37,7 @@ const App: React.FC = () => {
       url: "https://www.brkagro.com.br",
       icon: Tractor,
       gradient: "from-green-500 to-emerald-900",
-      imgLoja: "./assets/logo-agro.png",
+      imgLoja: logoAgro,
     },
     {
       id: "motors",
@@ -51,7 +46,7 @@ const App: React.FC = () => {
       url: "https://www.brkmotors.com.br",
       icon: Plane,
       gradient: "from-red-500 to-red-900",
-      imgLoja: "./assets/logo-motors.png",
+      imgLoja: logoMotors,
     },
     {
       id: "fishing",
@@ -60,7 +55,7 @@ const App: React.FC = () => {
       url: "https://www.brkfishing.com.br",
       icon: Fish,
       gradient: "from-blue-500 to-cyan-900",
-      imgLoja: "./assets/logo-fishing.png",
+      imgLoja: logoFishing,
     },
   ];
 
@@ -72,7 +67,7 @@ const App: React.FC = () => {
 
       {/* Header */}
       <header className="w-full py-6 md:py-8 flex justify-center items-center relative z-10">
-        <img className="invert w-60" src="./assets/logo-simples.svg" alt="" />
+        <img className="invert w-60" src={logoBRK} alt="" />
       </header>
 
       {/* Main Content */}
