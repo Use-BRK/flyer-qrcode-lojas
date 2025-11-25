@@ -1,20 +1,70 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# BRK Experience Hub - Cupom Landing Page
 
-# Run and deploy your AI Studio app
+Bem-vindo ao **BRK Experience Hub**, uma landing page interativa desenvolvida para distribuição de cupons de desconto exclusivos das marcas BRK (Agro, Motors e Fishing).
 
-This contains everything you need to run your app locally.
+Este projeto oferece uma experiência visual premium, com animações suaves e design responsivo, permitindo que os usuários copiem códigos de desconto e naveguem para as lojas específicas da marca.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1LJxwDeRvyK8XWIotQRuC9To_hbBoj0xX
+## ✨ Funcionalidades
 
-## Run Locally
+- **Cópia de Cupom**: Funcionalidade de um clique para copiar o código de desconto (`BRKVIP30`) para a área de transferência.
+- **Feedback Visual**: Animações e mensagens de confirmação ao copiar o código.
+- **Links para Lojas**: Cards interativos que direcionam para as lojas BRK Agro, BRK Motors e BRK Fishing.
+- **Design Responsivo**: Layout otimizado para desktop e dispositivos móveis.
+- **Estética Premium**: Uso de gradientes, blur e micro-interações para uma experiência moderna.
 
-**Prerequisites:**  Node.js
+## 🛠️ Tecnologias Utilizadas
 
+- **[React](https://react.dev/)**: Biblioteca JavaScript para construção da interface.
+- **[Vite](https://vitejs.dev/)**: Build tool rápida e leve.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utility-first para estilização.
+- **[Lucide React](https://lucide.dev/)**: Biblioteca de ícones.
+- **TypeScript**: Superset JavaScript para tipagem estática.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 Como Executar Localmente
+
+Siga os passos abaixo para rodar o projeto em sua máquina:
+
+### Pré-requisitos
+
+- **Node.js** (versão 18 ou superior recomendada)
+- **npm** (gerenciador de pacotes)
+
+### Instalação
+
+1. Clone o repositório (se aplicável) ou navegue até a pasta do projeto:
+   ```bash
+   cd flyer-qrcode-cupons
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+### Rodando o Projeto
+
+Para iniciar o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+O terminal exibirá o link local (geralmente `http://localhost:5173/`). Abra-o no seu navegador para visualizar a aplicação.
+
+### Scripts Disponíveis
+
+- `npm run dev`: Inicia o servidor de desenvolvimento.
+- `npm run build`: Compila o projeto para produção na pasta `dist`.
+- `npm run preview`: Visualiza a versão de produção localmente.
+- `npm run lint`: Executa a verificação de código com ESLint.
+
+## 📂 Estrutura do Projeto
+
+- `src/App.tsx`: Componente principal contendo a lógica e layout da landing page.
+- `src/components/`: Componentes reutilizáveis (ex: `BrandCard`).
+- `src/assets/`: Imagens e logotipos.
+- `src/types.ts`: Definições de tipos TypeScript.
+
+---
+
+Desenvolvido para **BRK**.
