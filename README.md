@@ -4,6 +4,9 @@ Bem-vindo ao **BRK Experience Hub**, uma landing page interativa desenvolvida pa
 
 Este projeto oferece uma experiência visual premium, com animações suaves e design responsivo, permitindo que os usuários copiem códigos de desconto e naveguem para as lojas específicas da marca.
 
+🔗 **Acesse o projeto online:** [https://Use-BRK.github.io/flyer-qrcode-lojas/](https://Use-BRK.github.io/flyer-qrcode-lojas/)
+
+
 ## ✨ Funcionalidades
 
 - **Cópia de Cupom**: Funcionalidade de um clique para copiar o código de desconto (`BRKVIP30`) para a área de transferência.
