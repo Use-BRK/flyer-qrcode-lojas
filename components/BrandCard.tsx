@@ -7,22 +7,35 @@ interface BrandCardProps {
 }
 
 const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
-
-
   return (
     <a
       href={brand.url}
-      className="
+      className={`
+        rounded-lg md:rounded-2xl
+        bg-gradient-to-l
+        ${
+          brand.id === "agro"
+            ? "from-[hsl(95,80%,37%)] via-[hsl(95,80%,20%)] to-[hsl(90,90%,1%)]"
+            : ""
+        }
+        ${
+          brand.id === "motors"
+            ? "from-[hsl(18,90%,52%)] via-[hsl(18,90%,20%)] to-[hsl(18,90%,1%)]"
+            : ""
+        }
+        ${
+          brand.id === "fishing"
+            ? "from-[hsl(214,90%,42%)] via-[hsl(214,90%,20%)] to-[hsl(214,90%,1%)]"
+            : ""
+        }
         group relative flex-1 min-w-0
         flex flex-row items-center justify-between
-        p-3 md:p-8 gap-4 pr-6
-        bg-zinc-900/40 border border-zinc-800 rounded-lg md:rounded-2xl
+        py-1 md:p-8 gap-1 px-8
         transition-all duration-300 ease-out
-        hover:border-zinc-500 hover:bg-zinc-900
         hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]
         active:scale-[0.98]
         cursor-pointer
-      "
+      `}
       role="button"
       aria-label={`Ir para ${brand.name}`}
     >
@@ -31,29 +44,29 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
         className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-b ${brand.gradient} rounded-lg md:rounded-2xl`}
       />
 
-      {/* Logo Image Section */}
-      <div
-        className=" 
+      <div className="flex items-center justify-center gap-12">
+        {/* Logo Image Section */}
+        <div
+          className=" 
         p-2 md:p-4 
         rounded-md md:rounded-xl 
-        bg-zinc-950 border border-zinc-800 
-        text-zinc-300 group-hover:text-white group-hover:border-zinc-500 
         transition-colors duration-300
       "
-      >
-        <img className="w-[4rem]" src={brand.imgLoja} alt="" />
-      </div>
+        >
+          <img className="w-[6rem]" src={brand.imgLoja} alt="" />
+        </div>
 
-      <div className="flex flex-col items-start justify-start max-w-[12ch] md:max-w-[24ch]">
-        {/* Title */}
-        <h3 className="text-[.875rem] md:text-2xl font-bold text-white mb-1 md:mb-3 leading-tight">
-          {brand.name}
-        </h3>
+        <div className="flex flex-col items-start justify-start max-w-[18ch] md:max-w-[24ch]">
+          {/* Title */}
+          <h3 className="text-[1.2rem] md:text-2xl font-bold text-white mb-1 md:mb-3 leading-tight">
+            {brand.name}
+          </h3>
 
-        {/* Description - Extremely compact on mobile */}
-        <p className="text-[.75rem] md:text-sm text-zinc-400 leading-tight mb-2 md:mb-6 line-clamp-2 md:line-clamp-none h-[2.5em] md:h-auto overflow-hidden">
-          {brand.description}
-        </p>
+          {/* Description - Extremely compact on mobile */}
+          <p className="text-[.75rem] md:text-sm text-white/90 leading-tight mb-2 md:mb-6 line-clamp-2 md:line-clamp-none md:h-auto overflow-hidden">
+            {brand.description}
+          </p>
+        </div>
       </div>
 
       {/* Call to Action Button */}
