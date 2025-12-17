@@ -48,8 +48,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
       <div className="flex items-center justify-center gap-1">
         {/* Logo Image Section */}
         <div
-          className=" 
-        p-2 md:p-4 
+          className="p-2 md:p-4 
         rounded-md md:rounded-xl 
         transition-colors duration-300
       "
@@ -72,16 +71,17 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
 
       {/* Call to Action Button */}
       <div
-        className="w-[3rem] h-[3rem]
+        className="
         rounded md:rounded-lg 
         bg-white/90 border border-white/10 
         group-hover:bg-white group-hover:text-black 
         text-white text-[8px] md:text-sm font-semibold 
         transition-all duration-300 
         flex items-center justify-center gap-1 md:gap-2
+        p-3 md:p-5
       "
       >
-        <ArrowRight className="w-6 h-6 md:w-4 md:h-4 transform group-hover:translate-x-1 transition-transform duration-300 text-black -rotate-45" />
+        <ArrowRight className="w-6 h-6 md:w-6 transform group-hover:translate-x-1 transition-transform duration-300 text-black -rotate-45" />
       </div>
     </a>
   );
