@@ -42,7 +42,7 @@ const App: React.FC = () => {
     {
       id: "motors",
       name: "BRK Motors",
-      description: "A maior marca de Pesca do Brasil",
+      description: "Acelere com Estilo",
       url: `https://www.brkmotors.com.br/discount/${couponCode}?utm_source=organico&utm_medium=flyer_personalizado&utm_campaign=Seu_Desconto_Sua_Escolha`,
       icon: Plane,
       gradient: "from-red-500 to-red-900",
@@ -51,7 +51,7 @@ const App: React.FC = () => {
     {
       id: "fishing",
       name: "BRK Fishing",
-      description: "Acelere com Estilo",
+      description: "A maior marca de Pesca do Brasil",
       url: `https://www.brkfishing.com.br/discount/${couponCode}?utm_source=organico&utm_medium=flyer_personalizado&utm_campaign=Seu_Desconto_Sua_Escolha`,
       icon: Fish,
       gradient: "from-blue-500 to-cyan-900",
@@ -143,7 +143,7 @@ const App: React.FC = () => {
           </div>
 
           <div>
-            <p className="w-[32ch] text-zinc-900 text-[1.3rem] md:text-lg leading-[1.5rem]max-w-lg mx-auto px-4">
+            <p className="sm:w-[32ch] text-zinc-900 text-[1.3rem] md:text-lg leading-[1.5rem]max-w-lg mx-auto px-4">
               Escolha em qual{" "}
               <strong className="text-zinc-900">loja BRK</strong> você vai
               aproveitar o{" "}
@@ -154,14 +154,14 @@ const App: React.FC = () => {
 
         {/* Cards Container - Forced Row on Mobile */}
         <div className="w-full mb-4 md:mb-4">
-          <div className="flex flex-col gap-4 md:gap-6 justify-between items-stretch w-full">
+          <div className="flex flex-col gap-4 md:gap-6 justify-between w-full justify-center items-center">
             {brands.map((brand) => (
               <BrandCard key={brand.id} brand={brand} />
             ))}
           </div>
         </div>
 
-        <p className="w-[40ch] text-zinc-900 text-[1rem] md:text-lg leading-[1.5rem] max-w-lg mx-auto px-4 mt-0 text-center">
+        <p className="sm:w-[40ch] text-zinc-900 text-[1rem] md:text-lg leading-[1.5rem] max-w-lg mx-auto px-4 mt-0 text-center">
           *Oferta válida para pedidos <strong>acima de R$99,00</strong> por{" "}
           <strong>tempo limitado</strong>.
         </p>

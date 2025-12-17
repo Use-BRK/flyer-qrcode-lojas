@@ -11,6 +11,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
     <a
       href={brand.url}
       className={`
+        w-full md:w-[fit-content]
         rounded-lg md:rounded-2xl
         bg-gradient-to-l
         ${
@@ -30,7 +31,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
         }
         group relative flex-1 min-w-0
         flex flex-row items-center justify-between
-        py-1 md:p-8 gap-1 px-8
+        py-1 md:p-8 gap-3 px-4
         transition-all duration-300 ease-out
         hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]
         active:scale-[0.98]
@@ -44,7 +45,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
         className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-b ${brand.gradient} rounded-lg md:rounded-2xl`}
       />
 
-      <div className="flex items-center justify-center gap-12">
+      <div className="flex items-center justify-center gap-1">
         {/* Logo Image Section */}
         <div
           className=" 
@@ -63,7 +64,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
           </h3>
 
           {/* Description - Extremely compact on mobile */}
-          <p className="text-[.75rem] md:text-sm text-white/90 leading-tight mb-2 md:mb-6 line-clamp-2 md:line-clamp-none md:h-auto overflow-hidden">
+          <p className="md:w-[20ch] text-[.75rem] md:text-sm text-white/90 leading-tight mb-2 md:mb-6 line-clamp-2 md:line-clamp-none md:h-auto overflow-hidden">
             {brand.description}
           </p>
         </div>
